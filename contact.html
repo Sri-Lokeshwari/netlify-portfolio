@@ -2,34 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Sri Lokeshwari</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
-
   <header>
-    <h1>Contact Me</h1>
+    <h1>Sri Lokeshwari K</h1>
+    <p>Cloud & DevOps Engineer</p>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
   </header>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </nav>
-
   <main>
-    <p>📧 Email: <a href="mailto:lokiesri143@gmail.com">lokiesri143@gmail.com</a></p>
-    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/sri-lokeshwari-k" target="_blank">linkedin.com/in/sri-lokeshwari-k</a></p>
-    <p>💻 GitHub: <a href="https://github.com/Sri-Lokeshwari" target="_blank">github.com/Sri-Lokeshwari</a></p>
+    <h2>Contact Me</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <p><input type="text" name="name" placeholder="Your Name" required></p>
+      <p><input type="email" name="email" placeholder="Your Email" required></p>
+      <p><textarea name="message" placeholder="Your Message" required></textarea></p>
+      <p><button type="submit">Send</button></p>
+    </form>
   </main>
-
   <footer>
-    &copy; 2025 Sri Lokeshwari
+    &copy; 2025 Sri Lokeshwari • <a href="mailto:lokiesri143@gmail.com">Contact Me</a>
   </footer>
-
 </body>
 </html>

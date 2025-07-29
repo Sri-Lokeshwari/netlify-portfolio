@@ -1,41 +1,134 @@
+<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Me | Sri Lokeshwari</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Sri Lokeshwari</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <style>
+    main {
+      animation: fadeIn 0.8s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-
   <header>
-    <h1>About Me</h1>
+    <h1>Sri Lokeshwari K</h1>
+    <p>Cloud & DevOps Engineer</p>
     <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
   </header>
-
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </nav>
-
   <main>
-    <p>I'm a Computer Science undergrad with a focus on Cloud and DevOps technologies. I enjoy building automation pipelines, deploying applications on cloud infrastructure, and learning new tools that improve software delivery.</p>
-
-    <p><strong>Technologies I work with:</strong></p>
-    <ul>
-      <li>AWS (EC2, S3, IAM)</li>
-      <li>Docker & GitHub Actions</li>
-      <li>Linux & Bash Scripting</li>
-      <li>CI/CD, Terraform (beginner)</li>
-    </ul>
+    <h2>About Me</h2>
+    <p>I am passionate about cloud technologies and automation. With a strong foundation in Linux, Git, and scripting, I am currently expanding my skills in AWS and DevOps practices including CI/CD, Infrastructure as Code, and containerization.</p>
   </main>
-
   <footer>
-    &copy; 2025 Sri Lokeshwari
+    &copy; 2025 Sri Lokeshwari • <a href="mailto:lokiesri143@gmail.com">Contact Me</a>
   </footer>
+</body>
+</html>
 
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Sri Lokeshwari</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+    main {
+      animation: fadeIn 0.8s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sri Lokeshwari K</h1>
+    <p>Cloud & DevOps Engineer</p>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Static Portfolio Website</h3>
+      <p>Built and deployed a responsive portfolio using HTML, CSS, Git, and Netlify. Includes dark mode toggle and mobile-friendly design.</p>
+    </div>
+    <div class="project">
+      <h3>AWS EC2 Deployment</h3>
+      <p>Launched a virtual server on AWS EC2 and configured security groups, SSH access, and Nginx server setup.</p>
+    </div>
+  </main>
+  <footer>
+    &copy; 2025 Sri Lokeshwari • <a href="mailto:lokiesri143@gmail.com">Contact Me</a>
+  </footer>
+</body>
+</html>
+
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sri Lokeshwari</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <style>
+    main {
+      animation: fadeIn 0.8s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sri Lokeshwari K</h1>
+    <p>Cloud & DevOps Engineer</p>
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <h2>Contact Me</h2>
+    <form name="contact" method="POST" data-netlify="true">
+      <p><input type="text" name="name" placeholder="Your Name" required></p>
+      <p><input type="email" name="email" placeholder="Your Email" required></p>
+      <p><textarea name="message" placeholder="Your Message" required></textarea></p>
+      <p><button type="submit">Send</button></p>
+    </form>
+  </main>
+  <footer>
+    &copy; 2025 Sri Lokeshwari • <a href="mailto:lokiesri143@gmail.com">Contact Me</a>
+  </footer>
 </body>
 </html>

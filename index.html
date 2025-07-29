@@ -1,34 +1,61 @@
+<!-- index.html with animations, icons, and mobile-friendly layout -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sri Lokeshwari | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Lokeshwari | Cloud & DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script src="script.js" defer></script>
 </head>
 <body>
 
-  <header>
-    <h1>Sri Lokeshwari K</h1>
-    <p>Cloud & DevOps Engineer</p>
-    <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Sri Lokeshwari K</h1>
+      <p class="tagline">Cloud & DevOps Engineer</p>
+      <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+    </div>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+  <nav class="nav">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <a href="about.html"><i class="fas fa-user"></i> About</a>
+    <a href="projects.html"><i class="fas fa-code"></i> Projects</a>
+    <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
   </nav>
 
-  <main>
-    <h2>Welcome to My Portfolio</h2>
-    <p>I specialize in building cloud-native and DevOps solutions with AWS, Docker, GitHub Actions, and CI/CD workflows.</p>
+  <main class="main">
+    <section class="intro">
+      <h2>Welcome to My Portfolio</h2>
+      <p>I specialize in building cloud-native solutions using tools like AWS, Docker, GitHub Actions, and CI/CD workflows. I'm passionate about automation and delivering scalable systems.</p>
+    </section>
+
+    <section class="highlights">
+      <div class="card">
+        <i class="fas fa-cloud"></i>
+        <h3>Cloud</h3>
+        <p>Hands-on with AWS services like EC2, S3, IAM and VPC setups.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-cogs"></i>
+        <h3>DevOps</h3>
+        <p>CI/CD pipelines with GitHub Actions, Docker, and Linux automation.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-code"></i>
+        <h3>Tools</h3>
+        <p>Version control with Git, scripting in Bash and Python, Terraform (beginner).</p>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    &copy; 2025 Sri Lokeshwari
+  <footer class="footer">
+    &copy; 2025 Sri Lokeshwari • <a href="mailto:lokiesri143@gmail.com">Contact Me</a>
   </footer>
 
 </body>
